@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- title -->
+    <ParallaxHeader />
+
+    <!-- Map -->
+    <MapSection />
+
+    <!-- Data -->
+    <TableSection />
+
+    <!-- GIS-->
+    <GISAnalysisSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ParallaxHeader from './components/ParallaxHeader.vue'
+import MapSection from './components/MapSection.vue'
+import TableSection from './components/TableSection.vue'
+import GISAnalysisSection from './components/GISAnalysisSection.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    ParallaxHeader,
+    MapSection,
+    TableSection,
+    GISAnalysisSection,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 </style>
+
